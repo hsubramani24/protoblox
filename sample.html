@@ -5,8 +5,12 @@
   </head>
   <body style="font-family: sans-serif;">
     <a-scene id="default"  >
-      <a-camera   position= "0 0 3" ></a-camera>
-      <a-box id="MyBox" visible="true"    color="#cc66cc"position= "0 0 0" rotation= "2 30 35" scale= "1 1 1" ></a-box>
+      <a-assets>
+      	  <a-asset-item id="obj1" src="https://drive.google.com/uc?export=view&id=17Z-w9KQ6rGQY-WQAkP2fWItt5LSsM_TT"></a-asset-item>
+
+      </a-assets>
+      <a-camera ></a-camera>
+      <a-entity class="class"  gltf-model="#obj1"   position= "0 1.5 0" ></a-entity>
       <a-plane id="Plane" visible="true"    color="#66ff99"position= "0 -1 0" rotation= "-90 0 0" scale= "5 5 1" ></a-plane>
       <a-sky    color= "#0d101c"></a-sky>
     </a-scene>
